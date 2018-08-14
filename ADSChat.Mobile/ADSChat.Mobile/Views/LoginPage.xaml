@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADSChat.Mobile.Views.LoginPage" 
+             Title="ADS Chat">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Welcome to ADS Chat!" Grid.Row="0" Grid.Column="0"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                       FontSize="Large" FontFamily="Arial" TextColor="White" ></Label>
+                <Entry x:Name="txtName"
+                       Grid.Row="1" Grid.Column="0"
+                       VerticalOptions="CenterAndExpand"
+                       Placeholder="Type your Name"
+                       PlaceholderColor="AntiqueWhite"
+                       BackgroundColor="Red"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       HeightRequest="70"
+                       FontSize="Large"
+                ></Entry>
+                <Button x:Name="btnNext" Clicked="BtnNext_OnClicked" Grid.Row="2" Grid.Column="0"
+                        Text="Start To Chat" TextColor="White"
+                        BackgroundColor="OrangeRed"                  
+                        VerticalOptions="Center"
+                        HeightRequest="50"
+                ></Button>
+            </Grid>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

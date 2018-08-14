@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Weecome <b id="b-name"></b></h2>
+
+<div>
+    <input type="text" id="txt-message" class="form-control" placeholder="EType yor message"/>
+</div>
+<div>
+    <ul id="ul-m"></ul>
+</div>
+
+
+@section script
+{
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(document).ready(function() {
+            var name = prompt("Enter your name?");
+            $("#b-name").html(name.toUpperCase());
+            var chatInput = $("#txt-message");
+            var ulMessage = $("#ul-m");
+            chatInput.focus();
+            var chat = $.connection.chatHub;
+            chat.connection.qs = { 'username': name };
+            chat.client.getMessage = function(username, message) {
+                ulMessage.append("<li><b>" + username + ":</b>" + message + "</li>");
+            };
+            chat.client.getMe = function(message) {
+                ulMessage.append("<li>"+message + "</li>");
+            };
+            chat.client.getInfo = function(info) {
+                ulMessage.append("<li><i clasee='text-center'>"+info + "</i></li>");
+            };
+            $.connection.hub.start().done(function() {
+                chatInput.keydown(function(e) {
+                    if (e.which == 13) {
+                        chat.server.sendMessage(name, chatInput.val());
+                        chatInput.val("");
+                        chatInput.focus();
+
+                    }
+                });
+            }); 
+        });
+    </script>
+}

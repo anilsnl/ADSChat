@@ -1,0 +1,1 @@
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile.UWP\ADSChat.Mobile.UWP.csproj;x86

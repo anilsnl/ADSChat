@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADSChat.Mobile.Views.ChatPage" BackgroundColor="Black">
+   
+    <ContentPage.Content>
+       <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+           <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView ItemsSource="{Binding Chats}" x:Name="lstChats" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0" 
+                      BackgroundColor="Red" SelectionMode="None" >
+                <ListView.ItemTemplate>
+                   <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label BackgroundColor="Red" Text="{Binding username}" IsVisible="{Binding isRecived}" TextColor="Gainsboro" FontAttributes="Bold"
+                                ></Label>
+                                <Label BackgroundColor="Red" TextColor="{Binding TextColor}" Text="{Binding message}" HorizontalTextAlignment="{Binding TextAlignment}" 
+                                       HorizontalOptions="FillAndExpand"  FontSize="Medium" MinimumHeightRequest="50" ></Label>
+                            </StackLayout>
+                            
+                        </ViewCell>
+                   </DataTemplate>
+               </ListView.ItemTemplate>
+           </ListView>
+           <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0">
+               <Grid>
+                   <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                   <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="60"/>
+                    </Grid.ColumnDefinitions>
+                   <Entry x:Name="txtMessage" Placeholder="Type your message" PlaceholderColor="CadetBlue" Grid.Column="0" Grid.Row="0"
+                          BackgroundColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="White"></Entry>
+                   <Button x:Name="btnSend" Text="Send" WidthRequest="60" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" FontSize="Small"
+                           BackgroundColor="Orange" TextColor="White" Clicked="BtnSend_OnClicked" Grid.Column="1" Grid.Row="0"></Button>
+                </Grid>
+              
+           </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\bin\Debug\netstandard2.0\ADSChat.Mobile.deps.json
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\bin\Debug\netstandard2.0\ADSChat.Mobile.dll
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\bin\Debug\netstandard2.0\ADSChat.Mobile.pdb
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\ADSChat.Mobile.csprojAssemblyReference.cache
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\ADSChat.Mobile.csproj.CoreCompileInputs.cache
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\ADSChat.Mobile.AssemblyInfoInputs.cache
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\ADSChat.Mobile.AssemblyInfo.cs
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\ADSChat.Mobile.dll
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\ADSChat.Mobile.pdb
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\anild\source\repos\ADSChat\ADSChat.Mobile\ADSChat.Mobile\obj\Debug\netstandard2.0\Views\ChatPage.xaml.g.cs
